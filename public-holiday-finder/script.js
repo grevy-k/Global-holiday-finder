@@ -1,6 +1,4 @@
-const apiKey = "1Qi9ZebW3cMyHg2kAGqFQh1cfCmfcNDl";  
 const countrySelect = document.getElementById("country");
-
 
 async function loadCountries() {
     const countries = {
@@ -9,7 +7,7 @@ async function loadCountries() {
         "DE": "Germany",
         "RW": "Rwanda"
     };
-    
+
     for (let code in countries) {
         let option = document.createElement("option");
         option.value = code;
@@ -17,9 +15,11 @@ async function loadCountries() {
         countrySelect.appendChild(option);
     }
 }
+
 loadCountries();
 
 async function fetchHolidays() {
+    const apiKey = config.API_KEY; 
     const country = document.getElementById("country").value;
     const year = document.getElementById("year").value;
     const url = `https://calendarific.com/api/v2/holidays?api_key=${apiKey}&country=${country}&year=${year}`;
