@@ -1,0 +1,9 @@
+# Ignore API key file
+config.js
+
+.DS_Store
+Thumbs.db
+
+*.log
+node_modules/
+
