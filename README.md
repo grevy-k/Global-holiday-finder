@@ -1,5 +1,7 @@
 Global Public Holiday Finder📅
+
 Overview
+
 Web App: https://www.grevy.tech/
 The Global Public Holiday Finder is a web application designed to help users easily discover public holidays across multiple countries. The application is hosted on two servers for redundancy and is fronted by a load balancer to ensure high availability.
 
